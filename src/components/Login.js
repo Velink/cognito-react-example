@@ -35,7 +35,7 @@ export default () => {
           const response = await fetch(apiGatewayUrl, {
             method: "POST", // or "POST" or other HTTP methods
             headers: {
-              Authorization: `Bearer ${idToken}`,
+              Authorization: idToken,
               // Add other headers as needed
             },
           });
